@@ -1,0 +1,165 @@
+/*
+Fonte: Lato (google fonts)
+Cor das fontes: #ff6b28
+Cor da top bar e da footer: #ff6b28
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* Boas práticas:
+html {
+    margin: 0;
+    padding: 0
+}
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.header, .footer{
+    background-color: #ff6b28;
+    
+    /* Alternativa:
+
+    text-align: center
+    */
+
+    /* Adicionado: */
+    padding: 15px;
+
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Não necessário:
+.header > img {
+    max-width: 145px;
+}
+*/
+
+.hero-bolo {
+    height: 400px;   
+    background-image: url('./images/hero_bolo.jpg');
+    background-size: cover;
+
+    /* Adicionado para centralizar a imagem*/
+    background-position: center;
+}
+
+.container {
+
+    /* Alternativa:
+    max-width: 990px;
+    */
+    width: 990px;
+
+    /* Alternativa:
+    padding: 0 40px;
+    margin-top: 100px;
+    */
+    margin: auto;
+}
+
+h1, h2 {
+    color: #ff6b28;
+
+    /* Redundante: 
+    font-weight: bold;
+    */
+}
+
+h1 {
+    font-size: 48px;
+
+    /* Não aplicado:
+    letter-spacing: -0.8px;
+    */
+
+    /* Adicionado */
+    margin: 50px 0;
+}
+
+.modulos {
+    padding: 70px 100px;
+    margin: 50px 0 0 0;
+
+    /* Adicionado */
+    border-radius: 20px;
+}
+
+.modulos:hover {
+    box-shadow: 8px 8px 15px 12px rgba(205, 205, 205, 0.25);
+}
+
+h2 {
+    font-size: 28px;
+
+    /* Adiconado: */
+    margin-bottom: 40px;
+}
+
+ul, ol {
+    /* Troquei: 
+    padding: 5px 25px;
+    */
+    margin-bottom: 50px;
+}
+
+li {
+    /* Troquei: 
+    padding: 0 0 10px 0;
+    */
+    margin-bottom: 14px;
+}
+
+a {
+    text-decoration: none;
+    background-color: #ff6b28;
+    color: white;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.ingredientes {
+    cursor: url("./images/cursor_ingredientes.png"), pointer;
+}
+
+.preparo {
+    cursor: url("./images/cursor_preparo.png"), pointer;
+}
+
+.adicionais {
+    cursor: url("./images/cursor_intrucoes.png"), pointer;
+}
+
+/* Adicionado */
+p, li {
+    line-height: 28px;
+}
+
+.footer > p {
+    /*Alternativa:
+    max-width: 500px
+    */
+    width: 500px;
+
+    color: white;
+    font-size: 16px;
+    text-align: center;
+
+    line-height: 24px;
+}
+
+#email {
+    text-decoration: none;
+    background-color: none;
+    padding: 0;
+    border-radius: 0;
+}
